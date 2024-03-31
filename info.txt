@@ -1,0 +1,32 @@
+Components Used:
+Arduino Boards: Two Arduino boards are utilized in the project. One Arduino is connected to the hand gesture recognition system, while the other Arduino is installed on the rover itself.
+
+Radio Transmitter and Receiver (433 MHz): These modules enable wireless communication between the hand gesture recognition system and the rover. The transmitter, connected to the Arduino processing hand gestures, sends commands wirelessly to the receiver attached to the rover's Arduino.
+
+Machine Learning Model: The ML model is trained to recognize specific hand gestures. It processes input from sensors (such as flex sensors or accelerometers) connected to the Arduino and outputs commands based on the recognized gestures.
+
+Motor Driver (L293D): The L293D motor driver is used to control the movement of the rover's motors. It allows the Arduino on the rover to control the speed and direction of the geared motors.
+
+Geared Motors: The rover is equipped with geared motors, which provide the necessary propulsion based on the commands received from the Arduino.
+
+Workflow:
+Hand Gesture Recognition: The Arduino connected to the hand gesture recognition system collects sensor data (e.g., from flex sensors) that represent hand gestures. This data is fed into the ML model.
+
+Command Generation: The ML model processes the sensor data and generates commands corresponding to recognized hand gestures. These commands are then sent to the radio transmitter.
+
+Wireless Transmission: The radio transmitter wirelessly transmits the commands to the receiver module located on the rover.
+
+Command Interpretation: The Arduino on the rover receives the transmitted commands through the radio receiver. It interprets these commands and converts them into instructions for motor control.
+
+Motor Control: The Arduino controls the L293D motor driver, adjusting the speed and direction of the geared motors based on the received instructions.
+
+Rover Movement: The geared motors respond to the commands, causing the rover to move according to the recognized hand gestures.
+
+Additional Considerations:
+Power Supply: A suitable power source, such as batteries, is required to power both the hand gesture recognition system and the rover.
+
+Chassis and Wheels: The rover's physical structure, including its chassis and wheels, should be robust enough to support the weight of the components and navigate various terrains.
+
+Testing and Calibration: The system needs to be thoroughly tested and calibrated to ensure accurate recognition of hand gestures and smooth rover movement.
+
+By combining Arduino microcontrollers, machine learning, radio communication, and motor control, this project demonstrates an innovative approach to controlling a rover using hand gestures.
