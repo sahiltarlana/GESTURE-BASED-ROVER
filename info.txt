@@ -1,4 +1,4 @@
-Components Used:
+ Components Used:
 Arduino Boards: Two Arduino boards are utilized in the project. One Arduino is connected to the hand gesture recognition system, while the other Arduino is installed on the rover itself.
 
 Radio Transmitter and Receiver (433 MHz): These modules enable wireless communication between the hand gesture recognition system and the rover. The transmitter, connected to the Arduino processing hand gestures, sends commands wirelessly to the receiver attached to the rover's Arduino.
